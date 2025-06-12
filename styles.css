@@ -1,0 +1,93 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height:1.5;
+    min-height:100vh;;
+    background-color:rgba(200, 228, 255, 0.6);
+}
+h1,p {
+    text-align:center;
+}
+.container{
+    width:80%;
+    margin:0 auto;
+}
+hr{
+    width:80%;
+    border:1px solid blue;
+}
+fieldset{
+    border:1px solid blue;
+    margin-bottom:10px;
+}
+legend{
+    font-weight:bold;
+    padding:5px;
+}
+.form-row{
+    margin-bottom:15px;
+}
+.form-row label{
+    display:inline-block;
+    width:100px;
+    text-align:right;
+    margin-right:10px;
+}
+.form-row input,
+.form-row select{
+    display:inline-block;
+    width:220px;
+}
+#position{
+    text-align:center;
+}
+.form-row input,
+.form-row select,
+textarea {
+  font-size: 14px;    
+  padding: 3px;       
+           
+  box-sizing: border-box; 
+}
+
+#submit{
+    display:block;
+    margin:20px auto;
+    padding:5px 20px;
+    font-size:16px;
+    border-radius:10px;
+    background-color:white;
+    border:1px solid blue;
+    
+}
+input:focus, textarea:focus{
+    border:1px solid blue;
+}
+input:invalid, select:invalid, textarea:invalid{
+    border:1px solid red;
+}
+input:valid, select:valid, textarea:valid{
+    border:1px solid green;
+}
+button:hover{
+    background-color:rgb(188, 225, 253);
+    box-shadow:0 0 6px rgba(30, 144, 255, 0.6);
+    transform:scale(1.2);
+}
+
+.radio-group input[type="radio"]:checked{
+    border:1px solid blue;
+    background-color: aliceblue;
+    box-shadow: 0 0 5px blue;
+}
+.radio-group input[type="radio"]:checked + label {
+  color: blue;
+  font-weight: bold;
+}
+input:first-of-type{
+    background-color:rgb(200, 220, 249);
+}
+footer{
+    padding:5px;
+    margin-bottom:20px;
+    
+}

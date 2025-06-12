@@ -1,16 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Job Application Form</title>
-        <link rel="stylesheet" href="styles.css">
-        <meta name="description" content="Job application form using HTML and style it with CSS pseudo-classes for interactive behavior.">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description"
+        content="Job application form using HTML and style it with CSS pseudo-classes for interactive behavior.">
+</head>
 
-    <body>
+<body>
+    <header class="header">
+        <h1>Job Application Form</h1>
+        <p>
+            Please fill out the form below to apply for one of our open job positions.
+            We are looking for passionate and talented professionals to join our team.
+        </p>
+    </header>
+    <div class="container">
+        <form>
+            <fieldset id="general">
+                <legend>General Information</legend>
 
-    </body>
+                <div class="form-row">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" required placeholder="Ex: Mary James" name="name">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" required maxlength="30" name="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="position">Job role:</label>
+                    <select id="position" name="position" required>
+                        <option value="">-- Please select a role --</option>
+                        <option value="frontend">Front-End Developer</option>
+                        <option value="backend">Back-End Developer</option>
+                        <option value="full-stack">Full-Stack Developer</option>
+                        <option value="designer">UI/UX Designer</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="radio-group">
+                <legend>Availability</legend>
+
+                <input type="radio" id="fulltime" name="availability" value="fulltime" checked>
+                <label for="fulltime">Full-Time</label>
+
+                <input type="radio" id="parttime" value="parttime" name="availability">
+                <label for="parttime">Part-Time</label>
+
+                <input type="radio" id="freelance" value="freelance" name="availability">
+                <label for="freelance">Freelance</label>
+
+                <input type="radio" id="internship" value="internship" name="availability">
+                <label for="internship">Internship</label>
+
+                <input type="radio" id="remote" value="remote" name="availability">
+                <label for="remote">Remote</label>
+            </fieldset>
+            
+            <fieldset class="textarea">
+                <legend>Brief description</legend>
+                <label for="message">Cover letter or short intro:</label>
+                <textarea id="message" name="message" placeholder="Talented developer ... " cols="50"
+                    rows="10"></textarea>
+            </fieldset>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <hr>
+    <footer>
+        <p class="footer">@RoxyRock Project</p>
+    </footer>
+
+</body>
 
 </html>
